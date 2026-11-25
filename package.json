@@ -1,0 +1,46 @@
+{
+  "name": "seo-audit-toolkit",
+  "version": "1.0.0",
+  "description": "Open-source bilingual (EN/ZH) SEO & GEO deterministic audit toolkit covering 80 rules across 5 modules",
+  "type": "module",
+  "bin": {
+    "seo-audit": "./dist/src/cli.js"
+  },
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "files": [
+    "dist",
+    "docs",
+    "config.example.json",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/tests/audit.test.js",
+    "start": "node dist/src/cli.js"
+  },
+  "keywords": [
+    "seo",
+    "seo-audit",
+    "technical-seo",
+    "geo",
+    "aeo",
+    "b2b-seo",
+    "cli",
+    "bilingual"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}

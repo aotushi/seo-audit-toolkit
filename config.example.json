@@ -1,0 +1,23 @@
+{
+  "lang": "en",
+  "modules": ["01", "02", "03", "04", "05"],
+  "profiles": ["core", "b2b", "matrix"],
+  "maxPages": 30,
+  "maxDepth": 3,
+  "delayMs": 150,
+  "timeoutMs": 12000,
+  "networkLabel": "local-office",
+  "sites": [
+    {
+      "name": "Example Main Site",
+      "url": "https://www.example.com/",
+      "expectedBrand": "Example Corp",
+      "language": "en",
+      "isMultilingual": false,
+      "isComplianceVertical": false,
+      "historicalDomains": [],
+      "knownUrls": [],
+      "externalComparisonUrls": []
+    }
+  ]
+}
